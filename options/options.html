@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mindwtr Quick Add — Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1>Mindwtr Quick Add Settings</h1>
+
+  <form id="options-form">
+    <div class="field">
+      <label for="api-url">API URL</label>
+      <input type="url" id="api-url" placeholder="http://127.0.0.1:4317" required>
+      <p class="hint">Base URL of the Mindwtr local API server.</p>
+    </div>
+
+    <div class="field">
+      <label for="api-token">API Token</label>
+      <input type="password" id="api-token" placeholder="Leave blank if no token set">
+      <p class="hint">Value of <code>MINDWTR_API_TOKEN</code> if configured.</p>
+    </div>
+
+    <div class="button-row">
+      <button type="submit">Save</button>
+      <span id="save-status" class="save-status hidden">Saved.</span>
+    </div>
+  </form>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add to Mindwtr</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h2>Add to Mindwtr</h2>
+    <button id="btn-options" class="icon-btn" title="Settings">&#9881;</button>
+  </div>
+
+  <div id="config-warning" class="warning hidden">
+    API URL not configured. <a href="#" id="open-options">Open settings</a>.
+  </div>
+
+  <div id="choice-row" class="choice-row">
+    <button id="btn-add-task" class="choice-btn">Add Task</button>
+    <button id="btn-add-website" class="choice-btn">Add Website</button>
+  </div>
+
+  <div id="input-section" class="hidden">
+    <textarea id="task-input" rows="5" placeholder="Task text..."></textarea>
+    <div class="button-row">
+      <button id="submit-btn">Submit</button>
+    </div>
+  </div>
+
+  <div id="status" class="status hidden"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
