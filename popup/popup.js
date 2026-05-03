@@ -41,7 +41,7 @@ async function init() {
   document.getElementById("btn-add-website").addEventListener("click", () => {
     const title = tab.title || tab.url || "";
     const url = tab.url || "";
-    const prefill = url ? `[${title}](${url})` : title;
+    const prefill = url ? `${title}\n${url}` : title;
     showInputSection(prefill);
   });
 

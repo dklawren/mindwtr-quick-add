@@ -5,7 +5,7 @@ Firefox extension to add tasks to a [Mindwtr](https://mindwtr.com) inbox from th
 ## Features
 
 - **Add Task** — opens a textarea for manual quick-add input (pre-filled with any selected page text)
-- **Add Website** — pre-fills the textarea with a markdown link `[Page Title](URL)` for the current tab
+- **Add Website** — pre-fills the textarea with the page title and URL for the current tab
 - Supports Mindwtr quick-add syntax: tags (`#foo`), contexts (`@foo`), due dates (`due:tomorrow`), etc.
 - Bearer token authentication (required when server has `MINDWTR_API_TOKEN` set)
 
