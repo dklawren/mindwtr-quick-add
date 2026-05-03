@@ -18,6 +18,30 @@ No build step required.
 
 To reload after changes: click **Reload** on the extension entry in `about:debugging`.
 
+## Permanent Installation (Developer Edition / Nightly only)
+
+Regular Firefox enforces extension signing and cannot be bypassed. Firefox Developer Edition and Nightly allow unsigned installs via an `about:config` flag.
+
+**1. Build the zip bundle**
+
+From the repo root, zip all extension files (excluding git and build artifacts):
+
+```bash
+zip -r mindwtr-quick-add.zip manifest.json icons/ popup/ options/
+```
+
+**2. Allow unsigned extensions**
+
+1. Open `about:config` in Firefox Developer Edition or Nightly
+2. Search for `xpinstall.signatures.required`
+3. Set it to `false`
+
+**3. Install**
+
+Drag `mindwtr-quick-add.zip` onto any Firefox tab, or use **File → Open File**. The extension will persist across restarts.
+
+---
+
 ## Configuration
 
 Click the gear icon in the popup to open settings:
